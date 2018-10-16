@@ -1,1 +1,1 @@
-This is my second file
+Git is usefull.This is my second file
