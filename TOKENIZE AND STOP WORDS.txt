@@ -1,0 +1,13 @@
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
+
+data = "this is my text and i will learn how to master machine learning and data science"
+stopWords = set(stopwords.words('english'))
+words = word_tokenize(data)
+wordsFiltered = []
+
+for w in words:
+    if w not in stopWords:
+        wordsFiltered.append(w)
+
+print(wordsFiltered)
